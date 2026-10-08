@@ -1,0 +1,315 @@
+- generic [active] [ref=f3e1]:
+  - link "Skip to content" [ref=f3e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f3e3]:
+    - navigation "Primary" [ref=f3e4]:
+      - link "Ahadi" [ref=f3e5] [cursor=pointer]:
+        - /url: /#top
+      - list [ref=f3e6]:
+        - listitem [ref=f3e7]:
+          - link "About" [ref=f3e8] [cursor=pointer]:
+            - /url: /#about
+        - listitem [ref=f3e9]:
+          - link "Analysis Work" [ref=f3e10] [cursor=pointer]:
+            - /url: /#analysis-work
+        - listitem [ref=f3e11]:
+          - link "Projects" [ref=f3e12] [cursor=pointer]:
+            - /url: /#projects
+        - listitem [ref=f3e13]:
+          - link "Certificates" [ref=f3e14] [cursor=pointer]:
+            - /url: /#certificates
+        - listitem [ref=f3e15]:
+          - link "Contact" [ref=f3e16] [cursor=pointer]:
+            - /url: /#contact
+  - main [ref=f3e17]:
+    - region "Introduction" [ref=f3e18]:
+      - generic [ref=f3e19]:
+        - generic [ref=f3e20]:
+          - paragraph [ref=f3e21]: Mirza Anto Ahadi Nur
+          - heading "Data-Driven Business Analyst" [level=1] [ref=f3e22]: Data-DrivenBusiness Analyst
+          - paragraph [ref=f3e23]: Based in Dhaka, Bangladesh
+          - paragraph [ref=f3e24]: "I take raw, messy, or fragmented business data and structure it into analysis: dashboards, reports, and decision-support outputs that make it easier to make a call."
+          - generic [ref=f3e25]:
+            - link "View My Work" [ref=f3e26] [cursor=pointer]:
+              - /url: "#projects"
+            - link "Contact Me" [ref=f3e27] [cursor=pointer]:
+              - /url: "#contact"
+        - img "Portrait of Mirza Anto Ahadi Nur" [ref=f3e31]
+      - link "Scroll Down" [ref=f3e32] [cursor=pointer]:
+        - /url: "#about"
+    - region [ref=f3e35]:
+      - generic [ref=f3e36]:
+        - generic [ref=f3e37]:
+          - heading "About Me" [level=2] [ref=f3e38]
+          - paragraph [ref=f3e39]: Get to know more about my background and skills
+        - generic [ref=f3e40]:
+          - generic [ref=f3e42]:
+            - generic [ref=f3e43]: — Academic Background
+            - heading "Education" [level=3] [ref=f3e49]
+            - list [ref=f3e50]:
+              - listitem [ref=f3e51]:
+                - paragraph [ref=f3e52]: BBA in Management Information Systems
+          - generic [ref=f3e54]:
+            - generic [ref=f3e55]: — Philosophy
+            - heading "How I Think" [level=3] [ref=f3e60]
+            - paragraph [ref=f3e61]: "I'm interested in how information becomes useful. I start with the business question, not the tool: structure the data, analyse it, and translate the result into a decision people can actually use. A dashboard that doesn't change a decision is just decoration."
+            - blockquote [ref=f3e62]: “Business questions, answered with data.”
+          - generic [ref=f3e64]:
+            - generic [ref=f3e65]: — Toolkit & Approach
+            - heading "How I Work" [level=3] [ref=f3e70]
+            - paragraph [ref=f3e71]: Business analysis discipline combined with applied analytics and AI-assisted workflows.
+            - generic [ref=f3e72]:
+              - generic [ref=f3e73]:
+                - heading "Analysis" [level=4] [ref=f3e74]
+                - list [ref=f3e75]:
+                  - listitem [ref=f3e76]:
+                    - generic [aria-hidden] [ref=f3e77]: ▸
+                    - text: Requirements elicitation & traceability
+                  - listitem [ref=f3e78]:
+                    - generic [aria-hidden] [ref=f3e79]: ▸
+                    - text: AS-IS / TO-BE mapping
+                  - listitem [ref=f3e80]:
+                    - generic [aria-hidden] [ref=f3e81]: ▸
+                    - text: Systems & gap analysis
+                  - listitem [ref=f3e82]:
+                    - generic [aria-hidden] [ref=f3e83]: ▸
+                    - text: Root-cause analysis
+                  - listitem [ref=f3e84]:
+                    - generic [aria-hidden] [ref=f3e85]: ▸
+                    - text: Solution evaluation
+              - generic [ref=f3e86]:
+                - heading "Documentation" [level=4] [ref=f3e87]
+                - list [ref=f3e88]:
+                  - listitem [ref=f3e89]:
+                    - generic [aria-hidden] [ref=f3e90]: ▸
+                    - text: UML & DFD
+                  - listitem [ref=f3e91]:
+                    - generic [aria-hidden] [ref=f3e92]: ▸
+                    - text: Functional requirements
+                  - listitem [ref=f3e93]:
+                    - generic [aria-hidden] [ref=f3e94]: ▸
+                    - text: User stories
+                  - listitem [ref=f3e95]:
+                    - generic [aria-hidden] [ref=f3e96]: ▸
+                    - text: Stakeholder registers
+                  - listitem [ref=f3e97]:
+                    - generic [aria-hidden] [ref=f3e98]: ▸
+                    - text: RACI matrices
+              - generic [ref=f3e99]:
+                - heading "Data & BI" [level=4] [ref=f3e100]
+                - list [ref=f3e101]:
+                  - listitem [ref=f3e102]:
+                    - generic [aria-hidden] [ref=f3e103]: ▸
+                    - text: SQL & PostgreSQL
+                  - listitem [ref=f3e104]:
+                    - generic [aria-hidden] [ref=f3e105]: ▸
+                    - text: Python (Pandas, NumPy)
+                  - listitem [ref=f3e106]:
+                    - generic [aria-hidden] [ref=f3e107]: ▸
+                    - text: Tableau
+                  - listitem [ref=f3e108]:
+                    - generic [aria-hidden] [ref=f3e109]: ▸
+                    - text: Power BI
+                  - listitem [ref=f3e110]:
+                    - generic [aria-hidden] [ref=f3e111]: ▸
+                    - text: Excel
+                  - listitem [ref=f3e112]:
+                    - generic [aria-hidden] [ref=f3e113]: ▸
+                    - text: IBM Cognos
+              - generic [ref=f3e114]:
+                - heading "Methods" [level=4] [ref=f3e115]
+                - list [ref=f3e116]:
+                  - listitem [ref=f3e117]:
+                    - generic [aria-hidden] [ref=f3e118]: ▸
+                    - text: Agile & Scrum
+                  - listitem [ref=f3e119]:
+                    - generic [aria-hidden] [ref=f3e120]: ▸
+                    - text: UAT & test support
+                  - listitem [ref=f3e121]:
+                    - generic [aria-hidden] [ref=f3e122]: ▸
+                    - text: BABOK® alignment
+                  - listitem [ref=f3e123]:
+                    - generic [aria-hidden] [ref=f3e124]: ▸
+                    - text: Applied statistics
+                  - listitem [ref=f3e125]:
+                    - generic [aria-hidden] [ref=f3e126]: ▸
+                    - text: Decision modelling (Analytica)
+          - generic [ref=f3e128]:
+            - generic [ref=f3e129]: — Career Timeline
+            - heading "Work Experience" [level=3] [ref=f3e135]
+            - list [ref=f3e136]:
+              - listitem [ref=f3e137]:
+                - heading "Marketing Intern" [level=4] [ref=f3e139]
+                - paragraph [ref=f3e140]: Cloudly Infotech Ltd.
+                - paragraph [ref=f3e141]: Sep 2026 – Present · Full-time
+                - paragraph [ref=f3e142]: Supporting B2B marketing through market and competitor research, prospect intelligence, lead generation, campaign support, marketing performance analysis, and content initiatives.
+              - listitem [ref=f3e143]:
+                - heading "AI Apprentice" [level=4] [ref=f3e145]
+                - paragraph [ref=f3e146]: Intelsense.ai
+                - paragraph [ref=f3e147]: Aug 2024 – Feb 2025 · Remote
+                - paragraph [ref=f3e148]: "Supported AI development workflows through data annotation and structured data preparation: organised and labelled datasets, maintained quality and consistency, and collaborated on workflow requirements."
+    - region [ref=f3e149]:
+      - generic [ref=f3e150]:
+        - generic [ref=f3e151]:
+          - heading "Analysis Work" [level=2] [ref=f3e152]
+          - paragraph [ref=f3e153]: Business problems I've broken down with data
+        - list [ref=f3e154]:
+          - listitem [ref=f3e155]:
+            - generic [ref=f3e156]:
+              - generic [ref=f3e157]: Profitability
+              - heading "Profitability & Cost Analysis" [level=3] [ref=f3e162]
+              - paragraph [ref=f3e163]: "Analysed: sales, COGS, expense and budget data to find where profit really comes from."
+              - list "Profitability & Cost Analysis skills" [ref=f3e164]:
+                - listitem [ref=f3e165]: KPI Design
+                - listitem [ref=f3e166]: Budget vs Actual
+                - listitem [ref=f3e167]: Tableau
+          - listitem [ref=f3e168]:
+            - generic [ref=f3e169]:
+              - generic [ref=f3e170]: Finance
+              - heading "Financial Performance Monitoring" [level=3] [ref=f3e176]
+              - paragraph [ref=f3e177]: "Analysed: profitability, liquidity and valuation ratios against targets across eight companies."
+              - list "Financial Performance Monitoring skills" [ref=f3e178]:
+                - listitem [ref=f3e179]: KPI vs Goal
+                - listitem [ref=f3e180]: Variance Analysis
+                - listitem [ref=f3e181]: Power BI
+          - listitem [ref=f3e182]:
+            - generic [ref=f3e183]:
+              - generic [ref=f3e184]: Decision Support
+              - heading "Decision Support Under Uncertainty" [level=3] [ref=f3e191]
+              - paragraph [ref=f3e192]: "Analysed: how the best choice shifts as confidence in an uncertain factor changes."
+              - list "Decision Support Under Uncertainty skills" [ref=f3e193]:
+                - listitem [ref=f3e194]: Sensitivity Analysis
+                - listitem [ref=f3e195]: Expected Value
+                - listitem [ref=f3e196]: Analytica
+          - listitem [ref=f3e197]:
+            - generic [ref=f3e198]:
+              - generic [ref=f3e199]: Marketing
+              - heading "Marketing & Market Intelligence" [level=3] [ref=f3e205]
+              - paragraph [ref=f3e206]: "Analysed: competitors, prospects and campaign performance to support B2B lead generation."
+              - list "Marketing & Market Intelligence skills" [ref=f3e207]:
+                - listitem [ref=f3e208]: Market Research
+                - listitem [ref=f3e209]: Lead Generation
+                - listitem [ref=f3e210]: Performance Analysis
+          - listitem [ref=f3e211]:
+            - generic [ref=f3e212]:
+              - generic [ref=f3e213]: AI Data
+              - heading "AI Data Preparation" [level=3] [ref=f3e220]
+              - paragraph [ref=f3e221]: "Analysed: dataset quality and consistency requirements for AI training workflows."
+              - list "AI Data Preparation skills" [ref=f3e222]:
+                - listitem [ref=f3e223]: Data Annotation
+                - listitem [ref=f3e224]: Data Quality
+                - listitem [ref=f3e225]: Requirements
+    - region [ref=f3e226]:
+      - generic [ref=f3e227]:
+        - generic [ref=f3e228]:
+          - heading "My Projects" [level=2] [ref=f3e229]
+          - paragraph [ref=f3e230]: Dashboards and decision models, with the full case study behind each one
+        - generic [ref=f3e231]:
+          - article [ref=f3e232]:
+            - generic [ref=f3e233]:
+              - heading "Cost Benefit Analysis Dashboard" [level=3] [ref=f3e234]
+              - paragraph [ref=f3e235]: A Tableau dashboard analysing cost and profit performance across products and states, pairing a profit-vs-sales trendline with budget-vs-actual margin tracking over time.
+              - generic [ref=f3e236]:
+                - list "Tools" [ref=f3e237]:
+                  - listitem [ref=f3e238]: Tableau
+                - list "Key numbers" [ref=f3e239]:
+                  - listitem [ref=f3e240]: 5 linked views
+                  - listitem [ref=f3e241]: ~10% profit conversion
+              - button "Read Case Study" [ref=f3e243]
+            - 'button "Enlarge image: Cost Benefit Analysis Dashboard" [ref=f3e247]':
+              - img "Tableau dashboard with a KPI strip, profit-vs-sales scatter, margin trend, marketing cost by product and a US state profit map" [ref=f3e248]
+          - article [ref=f3e255]:
+            - generic [ref=f3e256]:
+              - heading "Financial Market Performance Dashboard" [level=3] [ref=f3e257]
+              - paragraph [ref=f3e258]: A one-page Power BI dashboard that tracks profitability, liquidity and valuation across eight companies at once, with slicers, gauges, KPIs against goals and trend charts on a single screen.
+              - generic [ref=f3e259]:
+                - list "Tools" [ref=f3e260]:
+                  - listitem [ref=f3e261]: Power BI
+                - list "Key numbers" [ref=f3e262]:
+                  - listitem [ref=f3e263]: 16 visuals
+                  - listitem [ref=f3e264]: 8 companies
+                  - listitem [ref=f3e265]: 2005–2025
+              - button "Read Case Study" [ref=f3e267]
+            - 'button "Enlarge image: Financial Market Performance Dashboard" [ref=f3e271]':
+              - img "Power BI dashboard with slicers, profit margin and EPS gauges, KPI cards against goals, cash-flow lines, equity bars and a market cap and revenue combo chart" [ref=f3e272]
+          - article [ref=f3e279]:
+            - generic [ref=f3e280]:
+              - heading "Party Location Decision Model" [level=3] [ref=f3e281]
+              - paragraph [ref=f3e282]: A decision model that weighs three party locations against uncertain weather, then sweeps the probability of sunshine from 0% to 100% to find where the best choice actually flips.
+              - generic [ref=f3e283]:
+                - list "Tools" [ref=f3e284]:
+                  - listitem [ref=f3e285]: Analytica
+                - list "Key numbers" [ref=f3e286]:
+                  - listitem [ref=f3e287]: 3 options
+                  - listitem [ref=f3e288]: 0–100% sweep
+                  - listitem [ref=f3e289]: ≈87.5% threshold
+              - button "Read Case Study" [ref=f3e291]
+            - 'button "Enlarge image: Party Location Decision Model" [ref=f3e295]':
+              - img "Analytica influence diagram linking Party Location, Weather, Sunshine and Utility nodes, with a mean value chart" [ref=f3e296]
+    - region [ref=f3e303]:
+      - generic [ref=f3e304]:
+        - generic [ref=f3e305]:
+          - heading "Certificates" [level=2] [ref=f3e306]
+          - paragraph [ref=f3e307]: Professional certifications and learning milestones
+        - list [ref=f3e308]:
+          - listitem [ref=f3e309]:
+            - generic [ref=f3e315]:
+              - heading "Data Analytics" [level=3] [ref=f3e316]
+              - paragraph [ref=f3e317]: DeepLearning.AI
+          - listitem [ref=f3e318]:
+            - generic [ref=f3e324]:
+              - heading "Business Analyst" [level=3] [ref=f3e325]
+              - paragraph [ref=f3e326]: IBM
+          - listitem [ref=f3e327]:
+            - heading "Power BI" [level=3] [ref=f3e334]
+          - listitem [ref=f3e335]:
+            - heading "Generative AI & Prompt Engineering" [level=3] [ref=f3e342]
+    - region [ref=f3e343]:
+      - generic [ref=f3e344]:
+        - generic [ref=f3e345]:
+          - heading "Get In Touch" [level=2] [ref=f3e346]
+          - paragraph [ref=f3e347]: Open to Business Analyst and Data Analyst opportunities
+        - generic [ref=f3e349]:
+          - generic [ref=f3e350]:
+            - heading "Contact Info" [level=3] [ref=f3e351]
+            - list [ref=f3e352]:
+              - listitem [ref=f3e353]:
+                - link "ahadi.nur36@gmail.com" [ref=f3e357] [cursor=pointer]:
+                  - /url: mailto:ahadi.nur36@gmail.com
+                - button "Copy email address" [ref=f3e358]
+              - listitem [ref=f3e363]:
+                - generic [ref=f3e367]: Dhaka, Bangladesh
+            - list "Social profiles" [ref=f3e368]:
+              - listitem [ref=f3e369]:
+                - link "LinkedIn" [ref=f3e370] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/ahadi-nur-m8055aan/
+              - listitem [ref=f3e373]:
+                - link "GitHub" [ref=f3e374] [cursor=pointer]:
+                  - /url: https://github.com/ahadi133
+          - generic [ref=f3e377]:
+            - paragraph [ref=f3e378]: Have a business question that needs data behind it, or a role where analysis drives decisions? I'd like to hear about it.
+            - link "Email Me" [ref=f3e379] [cursor=pointer]:
+              - /url: mailto:ahadi.nur36@gmail.com
+  - contentinfo [ref=f3e383]:
+    - paragraph [ref=f3e384]: Mirza Anto Ahadi Nur
+    - navigation "Footer" [ref=f3e385]:
+      - list [ref=f3e386]:
+        - listitem [ref=f3e387]:
+          - link "About" [ref=f3e388] [cursor=pointer]:
+            - /url: /#about
+        - listitem [ref=f3e389]:
+          - link "Analysis Work" [ref=f3e390] [cursor=pointer]:
+            - /url: /#analysis-work
+        - listitem [ref=f3e391]:
+          - link "Projects" [ref=f3e392] [cursor=pointer]:
+            - /url: /#projects
+        - listitem [ref=f3e393]:
+          - link "Certificates" [ref=f3e394] [cursor=pointer]:
+            - /url: /#certificates
+        - listitem [ref=f3e395]:
+          - link "Contact" [ref=f3e396] [cursor=pointer]:
+            - /url: /#contact
+    - paragraph [ref=f3e397]: © 2026 Mirza Anto Ahadi Nur. All Rights Reserved.
+  - link [aria-hidden]:
+    - /url: "#top"
+  - alert [ref=f3e398]

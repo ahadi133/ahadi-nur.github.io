@@ -1,0 +1,487 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "YOON PYAE EAIN" [ref=e7] [cursor=pointer]:
+          - /url: "#"
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link "About" [ref=e11] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=e12]:
+            - link "BA Work" [ref=e13] [cursor=pointer]:
+              - /url: "#ba-work"
+          - listitem [ref=e14]:
+            - link "Projects" [ref=e15] [cursor=pointer]:
+              - /url: "#projects"
+          - listitem [ref=e16]:
+            - link "Certificates" [ref=e17] [cursor=pointer]:
+              - /url: "#certificates"
+          - listitem [ref=e18]:
+            - link "Contact" [ref=e19] [cursor=pointer]:
+              - /url: "#contact"
+  - generic [ref=e20]:
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - heading "BUSINESS ANALYST" [level=1] [ref=e24]
+        - paragraph [ref=e26]: BASED IN MYANMAR
+        - paragraph [ref=e27]: Currently working as a Junior Business Analyst at Origin Business Solutions, turning business needs into BRD/FRD documentation, process models, and test plans — backed by a developer's eye for technical feasibility and AI-assisted requirements workflows.
+        - generic [ref=e28]:
+          - link "View BA Work" [ref=e29] [cursor=pointer]:
+            - /url: "#ba-work"
+          - link " Download CV" [ref=e30] [cursor=pointer]:
+            - /url: resume/YoonPyaeEain_BusinessAnalyst.pdf
+            - generic [ref=e31]: 
+            - text: Download CV
+          - link "Contact Me" [ref=e32] [cursor=pointer]:
+            - /url: "#contact"
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - link:
+                - /url: https://spline.design/?utm_source=spline-viewer&utm_campaign=spline-logo
+    - generic [ref=e33] [cursor=pointer]:
+      - generic [ref=e34]: Scroll Down
+      - generic [ref=e35]: 
+  - generic [ref=e37]:
+    - generic:
+      - heading "About Me" [level=2]
+      - paragraph: Get to know more about my background and skills
+    - generic [ref=e38]:
+      - generic:
+        - generic:
+          - generic:
+            - generic: 
+            - generic: Academic Background
+          - heading "EDUCATION" [level=3]
+          - generic:
+            - generic:
+              - img "KMD College"
+              - img "NCC Education"
+            - generic:
+              - text: 2022 - 2025
+              - heading "KMD COLLEGE" [level=4]
+              - paragraph: NCC Education Level 3 (L3DC), Level 4 (L4DC) and Level 5 (L5DC) Diploma in Computing
+          - generic:
+            - generic:
+              - img "University of Greenwich"
+            - generic:
+              - generic:
+                - text: 2025 - 2026
+                - generic: Completed
+              - heading "University of Greenwich" [level=4]
+              - paragraph: B.Sc (Hons) Computing — First Class Honours
+      - generic:
+        - generic:
+          - generic:
+            - generic: 
+            - generic: Philosophy
+          - heading "HOW I THINK" [level=3]
+          - paragraph: Most software fails less at the code and more at the requirement two people quietly understood differently. I spend my time removing that ambiguity before it ever reaches a developer's backlog — a precisely written acceptance criterion prevents more bugs than a clever fix ever will.
+          - generic:
+            - blockquote: "\"The clearest requirement is the cheapest bug fix — because it never became a bug.\""
+      - generic:
+        - generic:
+          - generic:
+            - generic: 
+            - generic: Toolkit & Approach
+          - heading "HOW I WORK" [level=3]
+          - paragraph: "Blending business analysis discipline with a developer's technical grounding and deliberate AI prompt workflows:"
+          - generic:
+            - generic:
+              - heading "Analysis" [level=4]
+              - list:
+                - listitem: ▹ Requirements elicitation
+                - listitem: ▹ Gap analysis
+                - listitem: ▹ Business rules
+                - listitem: ▹ Traceability
+                - listitem: ▹ AS-IS / TO-BE modelling
+                - listitem: ▹ User journey mapping
+            - generic:
+              - heading "Documentation" [level=4]
+              - list:
+                - listitem: ▹ BRD · FRD · SRS
+                - listitem: ▹ User stories & use cases
+                - listitem: ▹ Acceptance criteria
+                - listitem: ▹ UML & sequence diagrams
+                - listitem: ▹ UAT scripts
+                - listitem: ▹ Defect logs
+            - generic:
+              - heading "AI Tooling" [level=4]
+              - list:
+                - listitem: ▹ ChatGPT
+                - listitem: ▹ Claude
+                - listitem: ▹ Gemini
+                - listitem: ▹ Prompt design for docs & tests
+                - listitem: ▹ AI-assisted prototyping
+            - generic:
+              - heading "Testing" [level=4]
+              - list:
+                - listitem: ▹ UAT scenarios & scripts
+                - listitem: ▹ Test data design
+                - listitem: ▹ Functional & acceptance testing
+                - listitem: ▹ Sign-off documentation
+            - generic:
+              - heading "Technical" [level=4]
+              - list:
+                - listitem: ▹ C# · ASP.NET Core
+                - listitem: ▹ Angular · TypeScript
+                - listitem: ▹ SQL Server · MySQL
+                - listitem: ▹ PostgreSQL / Neon
+                - listitem: ▹ REST APIs · JSON
+            - generic:
+              - heading "Tools" [level=4]
+              - list:
+                - listitem: ▹ Figma
+                - listitem: ▹ Microsoft Visio
+                - listitem: ▹ Git / GitHub · Vercel
+                - listitem: ▹ Agile · Scrum · DSDM
+      - generic:
+        - generic:
+          - generic:
+            - generic: 
+            - generic: Career Timeline
+          - heading "WORK EXPERIENCE" [level=3]
+          - generic:
+            - generic:
+              - generic: "1"
+              - generic:
+                - generic:
+                  - text: Jul 2026 - Present
+                  - generic: CURRENT
+                - heading "Junior Business Analyst" [level=4]
+                - paragraph: Origin Business Solutions (OBS)
+                - list:
+                  - listitem: Run daily AI prompt workflows (ChatGPT, Claude, Gemini) for requirements structuring, lean documentation, and automated test-case generation
+                  - listitem: Execute AI-driven rapid prototyping and deploy cloud demos (Vercel, Neon/PostgreSQL) for multi-region stakeholders to validate flows pre-build
+                  - listitem: Author BRD, FRD, SRS, user stories, use cases and acceptance criteria across concurrent projects
+                  - listitem: Model AS-IS/TO-BE processes, workflows and sequence diagrams; validate screen flows with UI/UX in Figma
+                  - listitem: Liaise between stakeholders, PMs, designers, developers and QA; prepare UAT scenarios, test scripts and sign-off documentation
+            - generic:
+              - generic: "2"
+              - generic:
+                - text: Feb 2025 - Jul 2025
+                - heading "Junior .NET Developer" [level=4]
+                - paragraph: Efficient Soft Co., Ltd.
+                - list:
+                  - listitem: Built core outpatient modules of a healthcare administration platform using ASP.NET Core and Angular
+                  - listitem: Designed SQL Server schemas and REST APIs supporting clinical workflows
+                  - listitem: Converted a three-month internship into a paid engineering role
+            - generic:
+              - generic: "3"
+              - generic:
+                - text: Aug 2024 - Oct 2024
+                - heading "Proposal Writer" [level=4]
+                - paragraph: RBF Plus
+                - list:
+                  - listitem: Researched and wrote matching-grant funding proposals for agrifood MSMEs
+                  - listitem: Translated technical, environmental and sustainability criteria into clear business documentation
+  - generic [ref=e40]:
+    - generic:
+      - heading "Business Analysis Work" [level=2]
+      - paragraph: What I've analysed and the techniques I used, across the domains I work in
+    - generic [ref=e41]:
+      - generic:
+        - generic:
+          - generic: 
+          - heading "ERP, Inventory & Finance" [level=3]
+          - paragraph:
+            - strong: "Analysed:"
+            - text: multi-branch inventory, stock transfers, FIFO valuation, multi-currency conversion, purchase-to-accounting flows, approval flows and role permissions.
+          - generic:
+            - generic: BRD/FRD
+            - generic: AS-IS/TO-BE
+            - generic: Gap Analysis
+            - generic: AI Prototyping
+      - generic:
+        - generic:
+          - generic: 
+          - heading "Healthcare / Clinic Management" [level=3]
+          - paragraph:
+            - strong: "Analysed:"
+            - text: multi-branch clinic workflows, operational dashboards and reports, and outpatient clinical processes; identified technical and security risks.
+          - generic:
+            - generic: Use Cases
+            - generic: Sequence Diagrams
+            - generic: Figma Validation
+            - generic: Risk Assessment
+      - generic:
+        - generic:
+          - generic: 
+          - heading "E-commerce & Retail" [level=3]
+          - paragraph:
+            - strong: "Analysed:"
+            - text: catalog variations, cart & checkout flows, payment gateway integration, and loyalty programs feeding into inventory and accounting backends.
+          - generic:
+            - generic: System Specs
+            - generic: User Journeys
+            - generic: Integration Mapping
+      - generic:
+        - generic:
+          - generic: 
+          - heading "CRM / Healthcare App & UAT" [level=3]
+          - paragraph:
+            - strong: "Analysed:"
+            - text: booking and treatment workflows, notifications and loyalty features; owned end-to-end validation coverage.
+          - generic:
+            - generic: UAT Scripts
+            - generic: Test Data
+            - generic: Defect Logs
+            - generic: Acceptance Criteria
+      - generic:
+        - generic:
+          - generic: 
+          - heading "HR" [level=3]
+          - paragraph:
+            - strong: "Analysed:"
+            - text: HR business rules, approval chains and role permissions within cross-functional ERP/HR projects.
+          - generic:
+            - generic: Requirements Elicitation
+            - generic: Traceability
+            - generic: Stakeholder Liaison
+      - generic:
+        - generic:
+          - generic: 
+          - heading "Education" [level=3]
+          - paragraph:
+            - strong: "Analysed:"
+            - text: education-domain system workflows, translating stakeholder needs into functional specifications.
+          - generic:
+            - generic: BRD/FRD
+            - generic: User Stories
+            - generic: Acceptance Criteria
+  - generic [ref=e43]:
+    - generic:
+      - heading "My Projects" [level=2]
+      - paragraph: Personal coding projects and technical experiments from my developer background
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - heading "Text to Voice Converter" [level=3]
+            - paragraph: A web application that converts text to speech with voice selection. Supports different voices including Microsoft David for English (United States).
+            - generic:
+              - generic: HTML
+              - generic: JavaScript
+              - generic: Web Speech API
+            - generic:
+              - link " Live Demo":
+                - /url: https://text-to-voice-converter-by-ype.vercel.app/
+                - generic: 
+                - text: Live Demo
+              - link " View Code":
+                - /url: https://github.com/yoonpyae/Text-To-Voice-Converter
+                - generic: 
+                - text: View Code
+        - generic:
+          - generic:
+            - img "Text to Voice Converter"
+            - generic:
+              - link "View Project":
+                - /url: https://text-to-voice-converter-by-ype.vercel.app/
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - heading "Snack Brand Website" [level=3]
+            - paragraph: A modern snack brand website with product showcase, navigation, and call-to-action sections. Features clean design with crab flavor product focus.
+            - generic:
+              - generic: HTML5
+              - generic: CSS3
+              - generic: JavaScript
+              - generic: Bootstrap
+            - generic:
+              - link " Live Demo":
+                - /url: https://potato-chips-website-by-ype.netlify.app/
+                - generic: 
+                - text: Live Demo
+              - link " View Code":
+                - /url: https://github.com/yoonpyae/Potato-Chips-Website
+                - generic: 
+                - text: View Code
+        - generic:
+          - generic:
+            - img "Snack Brand Website"
+            - generic:
+              - link "View Project":
+                - /url: https://potato-chips-website-by-ype.netlify.app/
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - heading "Weather Forecast App" [level=3]
+            - paragraph: A weather application showing current conditions and forecasts. Features include city search, temperature display, humidity, wind speed, and multi-day forecasts.
+            - generic:
+              - generic: React
+              - generic: OpenWeather API
+              - generic: JavaScript
+            - generic:
+              - link " Live Demo":
+                - /url: https://weather-app-by-ype.netlify.app/
+                - generic: 
+                - text: Live Demo
+              - link " View Code":
+                - /url: https://github.com/yoonpyae/weather-react
+                - generic: 
+                - text: View Code
+        - generic:
+          - generic:
+            - img "Weather Forecast App"
+            - generic:
+              - link "View Project":
+                - /url: https://weather-app-by-ype.netlify.app/
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - heading "Standing Desks Project" [level=3]
+            - paragraph: As part of a college assignment project, a static website was developed with the purpose of selling standing desks and providing helpful health advice for those who benefit from using them.
+            - generic:
+              - generic: HTML5
+              - generic: CSS3
+              - generic: JavaScript
+            - generic:
+              - link " Live Demo":
+                - /url: https://standing-desk-project-byype.netlify.app/
+                - generic: 
+                - text: Live Demo
+              - link " View Code":
+                - /url: https://github.com/yoonpyae/Standing-Desk-Project
+                - generic: 
+                - text: View Code
+        - generic:
+          - generic:
+            - img "Standing Desks Website"
+            - generic:
+              - link "View Project":
+                - /url: https://standing-desk-project-byype.netlify.app/
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - heading "Social Media Campaigns Project" [level=3]
+            - paragraph: A dynamic website designed for a college assignment, which is announcing campaigns and sharing knowledge of using social media, especially for children. Features include admin panels for managing content and posts, a user website for checking announcements and campaign information, and user registration and payment subscription for participating in paid campaigns.
+            - generic:
+              - generic: PHP
+              - generic: MySQL
+              - generic: HTML5
+              - generic: CSS3
+              - generic: JavaScript
+            - generic:
+              - link " View Code":
+                - /url: https://github.com/yoonpyae/Social-Media-Campaign-Ldt.--SMC-
+                - generic: 
+                - text: View Code
+        - generic:
+          - generic:
+            - img "Social Media Campaigns Website"
+            - generic:
+              - link "View Code":
+                - /url: https://github.com/yoonpyae/Social-Media-Campaign-Ldt.--SMC-
+  - generic [ref=e45]:
+    - generic:
+      - heading "Certificates" [level=2]
+      - paragraph: My professional certifications and achievements
+    - generic:
+      - generic:
+        - generic: Verified
+        - img "University of Greenwich BSc Degree Certificate"
+        - generic:
+          - heading "BSc (Hons) Computing — First Class Honours" [level=4]
+          - paragraph: University of Greenwich
+          - text: "Issued: 16 Jul 2026"
+      - generic:
+        - generic: Verified
+        - img "Business Analysis Fundamentals Certificate"
+        - generic:
+          - heading "Business Analysis Fundamentals" [level=4]
+          - paragraph: Microsoft & Coursera
+          - text: "Issued: 7 Jun 2026"
+      - generic:
+        - generic: Verified
+        - img "Project Management Foundation Bootcamp Certificate"
+        - generic:
+          - heading "Project Management Foundation Bootcamp" [level=4]
+          - paragraph: Origin Business Solutions × PMxPO
+          - text: "Issued: 2 Aug 2026"
+      - generic:
+        - img "Python Programming Certificate"
+        - generic:
+          - heading "Python Programming" [level=4]
+          - paragraph: Handong UNESCO UNITWIN
+          - text: "Issued: Fall 2024"
+      - generic:
+        - img "ITC Certificate"
+        - generic:
+          - heading "Introduction to Computing" [level=4]
+          - paragraph: SheCodes
+          - text: "Issued: 2023"
+      - generic:
+        - img "Web Development Certificate"
+        - generic:
+          - heading "Web Development Fundamentals" [level=4]
+          - paragraph: SheCodes
+          - text: "Issued: 2023"
+      - generic:
+        - img "Responsive Web Development Certificate"
+        - generic:
+          - heading "Responsive Web Development" [level=4]
+          - paragraph: SheCodes
+          - text: "Issued: 2023"
+      - generic:
+        - img "ASP.NET Certificate"
+        - generic:
+          - heading "React Development" [level=4]
+          - paragraph: SheCodes
+          - text: "Issued: 2023"
+  - generic [ref=e47]:
+    - generic:
+      - heading "Get In Touch" [level=2]
+      - paragraph: Have a project in mind or just want to say hello? Reach out through these channels
+    - generic [ref=e48]:
+      - generic:
+        - generic:
+          - generic:
+            - heading "Contact Info" [level=3]
+            - generic:
+              - generic: 
+              - generic:
+                - paragraph: Email
+                - link "yoonpyae26@gmail.com":
+                  - /url: mailto:yoonpyae26@gmail.com
+            - generic:
+              - generic: 
+              - generic:
+                - paragraph: Location
+                - text: Yangon, Myanmar
+            - generic:
+              - paragraph: Connect with me
+              - generic:
+                - link "":
+                  - /url: https://www.facebook.com/share/14MaCqefobQ/?mibextid=wwXIfr
+                - link "":
+                  - /url: https://github.com/yoonpyae
+                - link "":
+                  - /url: https://www.linkedin.com/in/yoonpyae
+            - link " Download CV":
+              - /url: resume/YoonPyaeEain_BusinessAnalyst.pdf
+              - generic: 
+              - text: Download CV
+  - contentinfo [ref=e49]:
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]: ⭐
+        - generic [ref=e54]: YOON PYAE EAIN
+      - generic [ref=e55]:
+        - link "About" [ref=e56] [cursor=pointer]:
+          - /url: "#about"
+        - link "BA Work" [ref=e57] [cursor=pointer]:
+          - /url: "#ba-work"
+        - link "Projects" [ref=e58] [cursor=pointer]:
+          - /url: "#projects"
+        - link "Certificates" [ref=e59] [cursor=pointer]:
+          - /url: "#certificates"
+        - link "Contact" [ref=e60] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e61]: © 2026 All Rights Reserved

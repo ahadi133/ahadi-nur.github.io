@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mirza Anto Ahadi Nur - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="shortcut icon" href="assets/star.svg" type="image/x-icon" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-4vIoXz0FZsF+oF1TQHspDnqkkW0oYBpa1Z0sKDL+X8cC8AnIg3aA3+Uv1v4q5PZVqvC5JCBhOy2F0Q2PZp2HtQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ahadi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#work">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ahadi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#work" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/logo.png" alt="Mirza Anto Ahadi Nur profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mirza Anto Ahadi Nur</h1>
+        <p class="section__text__p2">Data-Driven Business Analyst</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+          <a class="btn btn-color-2" href="./assets/Ahadi%20Nur%20CV.pdf" target="_blank" rel="noopener">View Resume</a>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/ahadi-nur-m8055aan/'"
+            target="_blank"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ahadi133'"
+            target="_blank"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Focus</h3>
+              <p>Business Analysis &amp; Data Analytics<br />Business · Data · Decision Support</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>BBA in Management Information Systems</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/checkmark.png" alt="Certification icon" class="icon" />
+              <h3>Certifications</h3>
+              <p>DeepLearning.AI Data Analytics · IBM Business Analyst · Power BI · GenAI &amp; Prompt Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am an MIS graduate in Dhaka, Bangladesh, combining business analysis methodologies with applied analytics and AI-assisted workflows. I enjoy understanding the business question, structuring the data, analyzing it, and translating the result into a decision people can use. My work focuses on identifying operational bottlenecks, bridging IT–business gaps, and building actionable, executive-ready dashboards.
+            </p>            
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills &amp; Expertise</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Business Analysis</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Requirements Engineering</h3>
+                  <p>Elicitation &amp; traceability</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Process Modeling</h3>
+                  <p>UML, DFD &amp; AS-IS/TO-BE mapping</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Systems &amp; Gap Analysis</h3>
+                  <p>Root-cause analysis &amp; solution evaluation</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Stakeholder Management</h3>
+                  <p>Engagement, registers &amp; RACI matrices</p>
+                </div>
+              </article>
+    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Agile &amp; Scrum</h3>
+                  <p>User stories &amp; collaborative delivery</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>UAT &amp; Documentation</h3>
+                  <p>Functional requirements &amp; test support</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>BABOK® Alignment</h3>
+                  <p>Structured analysis practice</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Analytics &amp; BI</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>SQL &amp; PostgreSQL</h3>
+                  <p>Querying &amp; relational database design</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Pandas, NumPy &amp; data preprocessing</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Tableau &amp; Power BI</h3>
+                  <p>Dashboards, KPIs &amp; data storytelling</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Excel &amp; IBM Cognos</h3>
+                  <p>Reporting &amp; business intelligence</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Applied Statistics</h3>
+                  <p>Hypothesis testing &amp; correlation analysis</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#work'" />
+    </section>
+    <section id="work">
+      <p class="section__text__p1">My Professional</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h2 class="experience-sub-title">Marketing Intern</h2>
+            <h3>Cloudly Infotech Ltd</h3>
+            <p>Sep 2026 – Present · Full-time</p>
+            <div class="text-container">
+              <p>Supporting B2B marketing through market and competitor research, prospect intelligence, lead generation, campaign support, marketing performance analysis, and content initiatives.</p>
+            </div>
+          </div>
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h2 class="experience-sub-title">AI Apprentice</h2>
+            <h3>Intelsense.ai</h3>
+            <p>Aug 2024 – Feb 2025 · Remote</p>
+            <div class="text-container">
+              <p>Supported AI development workflows through data annotation and structured data preparation; organized and labeled datasets, maintained quality and consistency, and collaborated on workflow requirements.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+    </section>
+    <section id="academic-projects">
+      <p class="section__text__p1">Browse My School</p>
+      <h1 class="title">Academic Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/CBA.png" alt="Cost Benefit Analysis Dashboard in Tableau" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Cost Benefit Analysis Dashboard (Tableau)</h2>
+            <p class="project-subtitle">I built a Tableau dashboard analyzing cost and profit performance across products and states, pairing a profit-vs-sales trendline with budget-vs-actual margin tracking over time.</p>
+            <details class="project-details">
+              <summary>Project details</summary>
+              <p><strong>Context:</strong> A solo Tableau assignment to build a Cost Benefit Analysis Dashboard from a course-provided sales and cost dataset.</p>
+              <p><strong>Problem:</strong> Turn transaction-level sales, cost, expense, marketing, inventory, and budget data into a view of profitability, performance by location and product, and budget attainment.</p>
+              <p><strong>Approach:</strong> Built five linked worksheets: KPIs, a Profit-vs-Sales scatter chart with trendline, Budgeted-vs-Actual Margin by month, Marketing Cost/Sales by product, and a state-level profit map.</p>
+              <p><strong>Insights:</strong> Profit is thin relative to revenue; the trendline is flat to slightly negative, showing that more sales did not reliably mean more profit. California led state profit, while marketing spend and sales did not move consistently together by product.</p>
+              <p><strong>Limitations:</strong> This is a course-provided dataset, not verified real sales data.</p>
+            </details>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://github.com/yoonpyae/weather-react"
+                target="_blank"
+              >
+                Github
+              </a>
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://weather-app-by-ype.netlify.app/"
+                target="_blank"
+              >
+                View here
+              </a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/FMP.png" alt="Financial Market Performance Dashboard in Power BI" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Financial Market Performance Dashboard (Power BI)</h2>
+            <p class="project-subtitle">I built a one-page Power BI dashboard that tracks profitability, liquidity, and valuation across eight companies at once—slicers, gauges, KPIs against goals, and trend charts on one screen.</p>
+            <details class="project-details">
+              <summary>Project details</summary>
+              <p><strong>Context:</strong> A solo Power BI assignment to turn course-provided financial-statement data into a decision-ready, single-page dashboard.</p>
+              <p><strong>Data:</strong> Per-company, per-year financial data across eight companies, including EPS, profitability ratios, cash flow, debt/equity, liquidity, market cap, and revenue from 2005–2025.</p>
+              <p><strong>Approach:</strong> Created 16 interactive visuals: company and year slicers, EPS and Profit Margin gauges, profitability cards, goal-based KPIs, cash-flow trends, employee and shareholder-equity comparisons, and a market-cap/revenue combo chart.</p>
+              <p><strong>Insights:</strong> Average profitability was positive but uneven; Free Cash Flow per Share and Debt/Equity targets were materially missed, while market cap and revenue diverged after 2020.</p>
+              <p><strong>Limitations:</strong> The course dataset appears synthetic or scaled, so figures demonstrate dashboard and metric design rather than audited real-world company performance.</p>
+            </details>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://github.com/yoonpyae/Potato-Chips-Website"
+                target="_blank"
+              >
+                Github
+              </a>
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://potato-chips-website-by-ype.netlify.app/"
+                target="_blank"
+              >
+                View here
+              </a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/ANALYtica.png" alt="Party Location Decision Model in Analytica" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Party Location Decision Model (Analytica)</h2>
+            <p class="project-subtitle">I built a decision model in Analytica that weighs three party locations against uncertain weather, then swept the probability of good weather from 0% to 100% to see when the right choice actually changes.</p>
+            <details class="project-details">
+              <summary>Project details</summary>
+              <p><strong>Context:</strong> A solo decision-modeling assignment under uncertainty, using Analytica decision, chance, and objective nodes.</p>
+              <p><strong>Problem:</strong> Choose between Outdoors, Porch, and Indoors when weather cannot be controlled—and identify whether the best decision changes with confidence in a sunny forecast.</p>
+              <p><strong>Data:</strong> Self-defined assignment utilities: Outdoors ($100 sunny / -$20 rainy), Porch ($90 / $50), and Indoors ($40 / $40).</p>
+              <p><strong>Approach:</strong> Connected Party Location, Weather, and Utility nodes, then added a Sunshine sequence from 0% to 100% in 10% steps to run a sensitivity analysis.</p>
+              <p><strong>Insights:</strong> Indoors never wins; Porch is best below about an 87.5% chance of sunshine, while Outdoors wins only when sunshine is very likely.</p>
+              <p><strong>Limitations:</strong> An assignment scenario with self-defined utilities, only two weather states, and no real-world weather or business data.</p>
+            </details>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href=""
+                target="_blank"
+              >
+                Github
+              </a>
+              <a
+                class="btn btn-color-2 project-btn"
+                href=""
+                target="_blank"
+              >
+                View here
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-4.png" alt="Project 4" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Social Media Campaigns Project</h2>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href=""
+                target="_blank"
+              >
+                Github
+              </a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-5.png" alt="Project 5" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Standing Desks Project</h2>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href=""
+                target="_blank"
+              >
+                Github
+              </a>
+              <a
+                class="btn btn-color-2 project-btn"
+                href=""
+                target="_blank"
+              >
+                View here
+              </a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-6.png" alt="Project 6" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Admin Dashboard for SMC Project</h2>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href=""
+              >
+                Github
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact" class="contact-section">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-containers">
+      <div class="contact-cards">
+        <div class="contact-card">
+          <img src="./assets/envelope.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <a href="mailto:ahadi.nur36@gmail.com" target="_blank">Mail</a>
+        </div>
+    
+        <div class="contact-card">
+          <img src="./assets/linkedin.svg" alt="LinkedIn icon" class="icon contact-icon" />
+          <a href="https://www.linkedin.com/in/ahadi-nur-m8055aan/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#work">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>This website was coded by ahadi133.</p>
+    </footer>
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top active" aria-label="Go To Top" data-go-top>
+      <img src="assets/up-arrow.png" alt="Go to top" class="go-top-icon" />
+    </a>
+    <script src="script.js"></script>
+  </body>
+</html>
