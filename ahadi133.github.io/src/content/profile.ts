@@ -21,10 +21,9 @@ export const profile = parseContent(
     photo,
     education: [
       {
-        degree: "BBA in Management Information Systems",
-        // TODO(Ahadi): institution and period.
-        institution: undefined,
-        period: undefined,
+        degree: "Bachelor of Business Studies in Management Information Systems (MIS)",
+        institution: "University of Dhaka",
+        period: "From 2022 to 2026",
       },
     ],
     philosophy: {
