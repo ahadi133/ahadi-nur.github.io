@@ -1,6 +1,0 @@
-[   14422ms] [WARNING] updating from  116 to  115 @ https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js:3174
-[   14423ms] [WARNING] Your .splinecode file is more recent than the library. Please upgrade @splinetool/runtime to the latest version. @ https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js:8209
-[   15001ms] [WARNING] THREE.WebGLProgram: Program Info Log: (210,13-45): warning X4008: floating point division by zero @ https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js:3146
-[   15229ms] [WARNING] THREE.WebGLProgram: Program Info Log: (228,1): warning X4000: use of potentially uninitialized variable (f_sobelSample) @ https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js:3146
-[   15792ms] [WARNING] THREE.WebGLProgram: Program Info Log: (235,1): warning X4000: use of potentially uninitialized variable (f_sobelSample) @ https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js:3146
-[   16356ms] [WARNING] THREE.WebGLProgram: Program Info Log: (522,1): warning X4000: use of potentially uninitialized variable (f_sobelSample) @ https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js:3146
