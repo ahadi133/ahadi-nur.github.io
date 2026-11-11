@@ -38,7 +38,18 @@ describe("site content", () => {
     expect(experience.length).toBeGreaterThan(0);
     expect(analysisWork.length).toBeGreaterThan(0);
     expect(certificates.length).toBeGreaterThan(0);
-    expect(projects.length).toBe(3);
+    expect(projects.map((project) => project.slug)).toEqual(
+      expect.arrayContaining([
+        "codeveda-data-cleaning",
+        "codeveda-iris-exploratory-analysis",
+        "codeveda-social-media-sentiment-dashboard",
+        "codeveda-customer-churn-sql-analysis",
+        "codeveda-customer-churn-statistical-analysis",
+        "codeveda-predictive-modeling",
+        "codeveda-churn-risk-analysis",
+        "codeveda-prescriptive-retention-strategy",
+      ]),
+    );
   });
 
   it("has unique project slugs", () => {
