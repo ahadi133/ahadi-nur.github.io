@@ -40,6 +40,11 @@ describe("site content", () => {
     expect(certificates.length).toBeGreaterThan(0);
     expect(projects.map((project) => project.slug)).toEqual(
       expect.arrayContaining([
+        "cloudly-campaign-performance-dashboard",
+        "cloudly-prospect-segmentation",
+        "cloudly-outreach-process-redesign",
+        "cloudly-website-content-brief",
+        "cloudly-content-plan-workbook",
         "codeveda-data-cleaning",
         "codeveda-iris-exploratory-analysis",
         "codeveda-social-media-sentiment-dashboard",
@@ -50,6 +55,42 @@ describe("site content", () => {
         "codeveda-prescriptive-retention-strategy",
       ]),
     );
+  });
+
+  it("orders Codveda projects before Cloudly projects and other projects", () => {
+    const groups = projects.map((project) =>
+      project.slug.startsWith("codeveda-")
+        ? 0
+        : project.slug.startsWith("cloudly-")
+          ? 1
+          : 2,
+    );
+    expect(groups).toEqual([...groups].sort());
+    expect(projects[8].slug).toBe("cloudly-campaign-performance-dashboard");
+    expect(projects[12].slug).toBe("cloudly-content-plan-workbook");
+    expect(projects[13].slug.startsWith("codeveda-")).toBe(false);
+    expect(projects[0].slug.startsWith("codeveda-")).toBe(true);
+    expect(
+      projects.find(
+        (project) => project.slug === "cloudly-campaign-performance-dashboard",
+      )?.links.live,
+    ).toBe(
+      "https://datastudio.google.com/reporting/cdf343d8-1f66-4eb7-9957-b3c2d36ddef3",
+    );
+  });
+
+  it("orders Codveda analysis work before Cloudly and other work", () => {
+    expect(analysisWork.slice(0, 8).map((item) => item.domain)).toEqual([
+      "Data Preparation",
+      "Exploratory Analysis",
+      "Social Media",
+      "Customer Churn",
+      "Statistical Inference",
+      "Predictive Analytics",
+      "Risk Prioritization",
+      "Retention Strategy",
+    ]);
+    expect(analysisWork[8].title).toBe("Marketing & Market Intelligence");
   });
 
   it("has unique project slugs", () => {
@@ -81,6 +122,49 @@ describe("projectSchema", () => {
   it("rejects an image that was not statically imported", () => {
     const result = projectSchema.safeParse({ ...validProject, image: "/x.png" });
     expect(result.success).toBe(false);
+  });
+
+  it("accepts dashboard embeds only from approved HTTPS hosts", () => {
+    expect(
+      projectSchema.safeParse({
+        ...validProject,
+        links: { embed: "https://app.powerbi.com/view?r=example" },
+      }).success,
+    ).toBe(true);
+    expect(
+      projectSchema.safeParse({
+        ...validProject,
+        links: { embed: "http://app.powerbi.com/view?r=example" },
+      }).success,
+    ).toBe(false);
+    expect(
+      projectSchema.safeParse({
+        ...validProject,
+        links: { embed: "https://example.com/report" },
+      }).success,
+    ).toBe(false);
+  });
+
+  it("accepts HTTPS and local PDF artifact links but rejects traversal paths", () => {
+    expect(
+      projectSchema.safeParse({
+        ...validProject,
+        links: {
+          artifacts: [
+            { label: "FRD", url: "/assets/sample-frd.pdf" },
+            { label: "Process map", url: "https://example.com/process-map.pdf" },
+          ],
+        },
+      }).success,
+    ).toBe(true);
+    expect(
+      projectSchema.safeParse({
+        ...validProject,
+        links: {
+          artifacts: [{ label: "FRD", url: "/assets/../private.pdf" }],
+        },
+      }).success,
+    ).toBe(false);
   });
 });
 

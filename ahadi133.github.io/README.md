@@ -34,7 +34,15 @@ missing field) fails `npm run build` with a message saying what is wrong.
    `src/content/projects.ts`.
 2. Add an entry to the `projects` array. `slug` (kebab-case) becomes the URL
    `/projects/<slug>`; `highlight` must be a word that appears in `title`.
-3. `links.code` / `links.live` are optional; their buttons only appear when set.
+3. `links.code`, `links.live`, `links.embed`, and `links.artifacts` are
+   optional. Code, demo, and artifact buttons only appear when their URLs are
+   set. Embeds are rendered only for Looker Studio, Power BI, and Tableau
+   Public URLs; keep this host allowlist in sync with the CSP in `next.config.ts`.
+4. For a local PDF artifact, put the file in `public/assets/` and use
+   `/assets/<file>.pdf` as its URL. HTTPS artifact URLs are also supported.
+5. Homepage projects are grouped by provider: CodeVeda, Cloudly, then other
+   work. Projects show three items initially; **See more** expands the
+   remaining items. Analysis Work displays all entries.
 
 ### Add a certificate
 

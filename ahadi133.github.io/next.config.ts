@@ -10,6 +10,7 @@ const contentSecurityPolicy = [
   "img-src 'self' data: blob:",
   "font-src 'self' data:",
   "connect-src 'self' https://*.spline.design https://vitals.vercel-insights.com https://va.vercel-scripts.com",
+  "frame-src https://lookerstudio.google.com https://app.powerbi.com https://public.tableau.com",
   "worker-src 'self' blob:",
   "frame-ancestors 'none'",
   "base-uri 'self'",

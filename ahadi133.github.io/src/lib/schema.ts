@@ -80,6 +80,27 @@ const payoffSchema = z.object({
   rainy: z.number(),
 });
 
+const httpsUrl = z.url({ protocol: /^https$/ });
+
+const embedHosts = [
+  "lookerstudio.google.com",
+  "app.powerbi.com",
+  "public.tableau.com",
+] as const;
+
+const embedUrl = httpsUrl.refine(
+  (value) => (embedHosts as readonly string[]).includes(new URL(value).hostname),
+  { message: `embed must be an https URL on: ${embedHosts.join(", ")}` },
+);
+
+const artifactUrl = z.union([
+  httpsUrl,
+  z
+    .string()
+    .regex(/^\/assets\/[A-Za-z0-9._/-]+\.pdf$/i, "use https or /assets/*.pdf")
+    .refine((value) => !value.includes(".."), "no path traversal"),
+]);
+
 export const projectSchema = z
   .object({
     slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "slug must be kebab-case"),
@@ -91,7 +112,12 @@ export const projectSchema = z
     image: staticImage,
     imageAlt: nonEmpty,
     stats: z.array(nonEmpty),
-    links: z.object({ code: optionalUrl, live: optionalUrl }),
+    links: z.object({
+      code: optionalUrl,
+      live: optionalUrl,
+      embed: embedUrl.optional(),
+      artifacts: z.array(z.object({ label: nonEmpty, url: artifactUrl })).optional(),
+    }),
     caseStudy: z.object({
       context: nonEmpty,
       problem: nonEmpty,

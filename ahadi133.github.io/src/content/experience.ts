@@ -9,9 +9,17 @@ export const experience = parseContent(
       role: "Marketing Intern",
       company: "Cloudly Infotech Ltd.",
       period: "Sep 2026 – Present",
-      meta: "Full-time",
+      meta: "Internship · On-site, Dhaka",
       summary:
-        "Supporting B2B marketing through market and competitor research, prospect intelligence, lead generation, campaign support, marketing performance analysis, and content initiatives.",
+        "B2B market and competitor research; prospect segmentation and data management in Apollo, HubSpot, Excel and Google Sheets; auto-refreshing Looker Studio dashboards for multi-product email campaigns; outreach redesign proposals; and website content, SEO/GEO strategy and A/B content testing, in close collaboration with marketing, growth, development and business teams.",
+    },
+    {
+      role: "Business Analytics Intern",
+      company: "Codveda Technologies",
+      period: "Oct 2026",
+      meta: "Internship · Remote",
+      summary:
+        "Cleaned and standardized multi-source data, ran exploratory analysis, built Looker Studio and Power BI dashboards with drill-downs, and applied SQL, correlation, regression and A/B testing to business data. The resulting projects are in the project grid.",
     },
     {
       role: "AI Apprentice",
@@ -20,6 +28,14 @@ export const experience = parseContent(
       meta: "Remote",
       summary:
         "Supported AI development workflows through data annotation and structured data preparation: organised and labelled datasets, maintained quality and consistency, and collaborated on workflow requirements.",
+    },
+    {
+      role: "Social Media Manager",
+      company: "African Fashion and Arts Movement",
+      period: "Aug 2021 – Nov 2021",
+      meta: "Contract · Remote",
+      summary:
+        "Managed social content, scheduling and audience engagement to support brand campaigns and online visibility.",
     },
   ],
   "experience",
