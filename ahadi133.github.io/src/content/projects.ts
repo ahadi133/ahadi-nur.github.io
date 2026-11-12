@@ -1,4 +1,9 @@
 import { z } from "zod";
+import cloudlyCampaignDashboardImage from "@/assets/projects/cloudly-campaign-dashboard.png";
+import cloudlyContentPlanImage from "@/assets/projects/cloudly-content-plan-workbook.png";
+import cloudlyOutreachRedesignImage from "@/assets/projects/cloudly-outreach-redesign.png";
+import cloudlyProspectSegmentationImage from "@/assets/projects/cloudly-prospect-segmentation.png";
+import cloudlyWebsiteContentImage from "@/assets/projects/cloudly-website-content-strategy.png";
 import codevedaChurnRiskImage from "@/assets/projects/codeveda-churn-risk.png";
 import codevedaChurnSqlImage from "@/assets/projects/codeveda-churn-sql.png";
 import codevedaChurnStatisticsImage from "@/assets/projects/codeveda-churn-statistics.png";
@@ -16,9 +21,208 @@ import partyImage from "@/assets/projects/party-analytica.png";
 import worldGdpImage from "@/assets/projects/world-gdp.png";
 import { parseContent, projectSchema } from "@/lib/schema";
 
+function projectGroup(slug: string) {
+  if (slug.startsWith("codeveda-")) return 0;
+  if (slug.startsWith("cloudly-")) return 1;
+  return 2;
+}
+
 export const projects = parseContent(
   z.array(projectSchema),
   [
+    {
+      slug: "cloudly-campaign-performance-dashboard",
+      title: "Email Campaign Performance Dashboard",
+      highlight: "Dashboard",
+      tool: "Looker Studio · Google Sheets",
+      summary:
+        "An auto-refreshing Looker Studio dashboard built during my Cloudly Infotech internship, replacing static document reports for B2B email outreach across three products.",
+      image: cloudlyCampaignDashboardImage,
+      imageAlt:
+        "Anonymized Looker Studio dashboard showing campaign overview, product comparison and sequence-level email metrics",
+      stats: ["3 products compared", "3 analysis levels", "15-min auto-refresh"],
+      links: {
+        live: "https://datastudio.google.com/reporting/cdf343d8-1f66-4eb7-9957-b3c2d36ddef3",
+      },
+      caseStudy: {
+        context:
+          "An anonymized case study from my Marketing Intern role at Cloudly Infotech. Campaign results had been shared as documents, which made comparison across products slow.",
+        problem:
+          "Give marketing, growth and business teams one place to see how three product email campaigns were performing, without rebuilding a report each time.",
+        data: "Outreach-platform email metrics (emails sent, open rate, reply rate, bounce rate) for three B2B product campaigns, organized by product, outreach stream and sequence in Google Sheets. Aggregate metrics only.",
+        approach: [
+          "Restructured the campaign data in Google Sheets so Looker Studio could read it reliably.",
+          "Designed three analysis levels: overall campaign overview, product-to-product comparison, and sequence-level detail.",
+          "Built comparison charts and interactive filters and sliders so people in different roles could explore the data themselves.",
+          "Applied the company's website color palette for a consistent look, and set the report to refresh automatically from the sheet (minimum 15 minutes).",
+          "Walked the marketing and business teams through the controls in a live meeting.",
+        ],
+        insights: [
+          "Side-by-side comparison made differences visible that separate documents hid: engagement was around 50% among CEOs and VPs in one campaign, over 50% among executives and around 40% among network engineers in another, and low in the third.",
+          "Despite that engagement, none of the three campaigns had produced a reply, which pointed to a problem after the open rather than at it.",
+        ],
+        implication:
+          "A shared, self-refreshing view moved the team from reporting numbers to asking why, and it fed directly into the outreach redesign proposal.",
+        limitations:
+          "Anonymized and aggregate only. Engagement is as reported by the outreach platform, where opens and clicks can include automated activity, so it is not proof of human interest.",
+      },
+    },
+    {
+      slug: "cloudly-prospect-segmentation",
+      title: "B2B Prospect Qualification & Segmentation",
+      highlight: "Segmentation",
+      tool: "Apollo · HubSpot · Google Sheets · LinkedIn",
+      summary:
+        "Cleaning, qualifying and persona-segmenting B2B prospect lists for outreach campaigns, with manual LinkedIn verification to fix generic job titles.",
+      image: cloudlyProspectSegmentationImage,
+      imageAlt:
+        "Anonymized illustration of a prospect list being categorized into persona segments",
+      stats: ["400+ entry list", "250+ qualified", "125 of 133 re-verified"],
+      links: {},
+      caseStudy: {
+        context:
+          "An anonymized case study from my Cloudly Infotech internship, where outreach quality depended on reaching the right role at the right company.",
+        problem:
+          'Large prospect lists contained unrelated leads, unverified emails and generic titles such as "VP" or "Director" that hid who actually made technology decisions.',
+        data: "A 400+ entry prospect list for a network-technology product, plus smaller lists for two other products, held in a CRM and an outreach platform. No individual prospect data is shown.",
+        approach: [
+          "Enriched lists, removed leads with unverified or unavailable emails, and scheduled valid prospects into pre-built outreach sequences.",
+          "Split each list into persona-based tracks, for example executive decision makers versus technical champions.",
+          "Categorized the large list into unrelated leads, technical leaders and generic VPs/Directors, then removed the unrelated group.",
+          "Reviewed generic-title profiles one by one on LinkedIn, updating titles to reflect actual responsibilities and removing people with no decision-making relevance.",
+          "Agreed a final submission with the growth team, separating confirmed prospects from uncertain ones, and later re-verified the uncertain group.",
+          "Used Google Sheets FILTER to split approved lists by persona before importing them into sequences.",
+        ],
+        insights: [
+          "Manual title review changed the segmentation: some prospects first tagged as operations decision makers fitted the technical-champion persona better once their real responsibilities were checked. I flagged these to my team lead for reclassification.",
+          "Of 133 prospects previously marked as uncertain, 125 passed verification, so the uncertain group was mostly recoverable rather than waste.",
+        ],
+        implication:
+          "Lead quality comes from understanding a person's actual role, not from list size, and persona-specific tracks make it possible to send different messages to different buyers.",
+        limitations:
+          "Anonymized. Segment sizes reflect the lists at the time and are not a conversion measurement. Segmentation criteria were agreed with the team rather than derived statistically.",
+      },
+    },
+    {
+      slug: "cloudly-outreach-process-redesign",
+      title: "Outreach Gap Analysis & Sequence Redesign",
+      highlight: "Redesign",
+      tool: "Gap analysis · Email sequence design · Apollo",
+      summary:
+        "A root-cause analysis of why three email campaigns generated engagement but no replies, and a proposed redesign built around one purpose and one call to action per email.",
+      image: cloudlyOutreachRedesignImage,
+      imageAlt:
+        "Anonymized diagram of a redesigned multi-step outreach sequence with one call to action per step",
+      stats: [
+        "3 campaigns reviewed",
+        "0 replies diagnosed",
+        "Redesign approved by team lead",
+      ],
+      links: {},
+      caseStudy: {
+        context:
+          "An anonymized case study from my Cloudly Infotech internship. After preparing outreach reports for shareholders, I was asked by my team lead to turn my feedback into a concrete proposal.",
+        problem:
+          "Three campaigns showed engagement but produced no replies, and I needed to work out where the outreach was failing before rewriting any copy.",
+        data: "Email-platform analytics for the three campaigns, the existing first-step emails, and the product brief used as the source of truth. Data volume was limited, so conclusions are treated as hypotheses.",
+        approach: [
+          "Compared the current outreach approach with the intended outcome (gap analysis) and wrote root-cause hypotheses rather than conclusions.",
+          "Reviewed the first email: it explained too much at once and asked for a 15-minute meeting with no link, evidence or easier next step.",
+          "Sorted product claims into already available, partially available and roadmap, so emails only promised what could be backed up.",
+          "Designed a gradual journey where each email has one purpose and one CTA: recognize the problem, visit the product page, then try a self-service demo.",
+          "Differentiated messaging by role: something technical to inspect for engineers, business risk and easy sharing for executives.",
+          "Planned measurement before launch: tagged links, click tracking and a way to tie trial sign-ups to a company, while noting clicks alone are not proof of human interest.",
+        ],
+        insights: [
+          "The templates were plain, text-only and had no clear CTA, which is a plausible reason engagement did not turn into replies.",
+          "The goal of a campaign should not be limited to a reply. A click to an evidence-based product page is a valid and more measurable next step.",
+        ],
+        implication:
+          "My team lead approved the proposed approach, with final sign-off from the head of marketing needed before implementation.",
+        limitations:
+          "Hypotheses, not tested results: the redesigned sequence had not been launched, so there is no performance data for it yet. Anonymized.",
+      },
+    },
+    {
+      slug: "cloudly-website-content-brief",
+      title: "Website Content Brief & SEO Strategy",
+      highlight: "Content",
+      tool: "Content strategy · SEO/GEO · A/B content testing",
+      summary:
+        "A content brief, page-by-page SEO plan and A/B content experiment for a new standalone product website, built from validated source material and flagged open questions.",
+      image: cloudlyWebsiteContentImage,
+      imageAlt:
+        "Anonymized outline of a product website structure with per-page SEO fields",
+      stats: [
+        "4 source sites reviewed",
+        "2 content variants (A/B)",
+        "5 open questions flagged",
+      ],
+      links: {},
+      caseStudy: {
+        context:
+          "An anonymized case study from my Marketing Intern role at Cloudly Infotech. A network-technology product was being developed as an independent website, and I was asked to coordinate and create the content structure for its pages.",
+        problem:
+          "Write website content that is accurate, search-friendly and aimed at the right buyers, when the product was still being built and the source material was several weeks old.",
+        data: "Four validated HTML websites used as background sources, plus the product's marketing formulation. No customer data or confidential specifications are shown.",
+        approach: [
+          "Wrote a content brief before any copy: what the product is, the problem it solves, audience, buyers and users, industries, core capabilities, differentiators, alternatives, evidence, deployment, integrations, pricing, CTA, brand direction, SEO priorities and product status.",
+          "Listed what had to be confirmed before publishing: on-premise availability, customer references or quotable performance numbers, the final landing-page URL and trial-button label, official logo and brand guidelines, and whether the source pages had been re-verified since they were written.",
+          "Used LLM tools with the source material to set up a repeatable content workflow, then defined SEO fields for each page and for the site as a whole: search intent, primary and secondary keywords, main message, conversion objective, SEO title, meta description, URL slug and page structure.",
+          "Planned a full site structure: homepage, about, solutions and features, use cases, how it works, benefits, integrations, technical information, resources, FAQ, and a contact/demo page focused on conversion.",
+          "Generated two content directions for the pages: Version A led with the outcomes the product delivers, and Version B led with the mechanisms behind them.",
+          "Later revised the content deck to match the development team's feedback on actual build progress.",
+        ],
+        insights: [
+          "Separating what had to be confirmed from what could be written stopped unverified claims, such as performance numbers and deployment options, from slipping into copy.",
+          "Outcome-led and mechanism-led messaging suit different readers, so testing them per page is more useful than choosing one tone for the whole site.",
+        ],
+        implication:
+          "The brief gave the team a single reference for what the site should say, which questions were still open, and how each page should be found and converted, and the deck stayed aligned with the product as development moved.",
+        limitations:
+          "The A/B comparison was a content-generation experiment, not a live traffic test, so there are no conversion results. The product was still in development, and the brief depends on claims awaiting engineering confirmation. Anonymized.",
+      },
+    },
+    {
+      slug: "cloudly-content-plan-workbook",
+      title: "Content Plan Workbook & Claims Check",
+      highlight: "Claims",
+      tool: "Google Sheets · Dashboards · Content operations",
+      summary:
+        "A messy cross-product social media plan rebuilt into a five-tab tracking workbook with a live dashboard, post copy checks and a pre-publication claims review.",
+      image: cloudlyContentPlanImage,
+      imageAlt:
+        "Anonymized content-plan dashboard with KPI tiles, a week-by-week grid and status and channel breakdowns",
+      stats: [
+        "28 deliverables tracked",
+        "~140 formulas, 0 errors",
+        "22 claims queued for review",
+      ],
+      links: {},
+      caseStudy: {
+        context:
+          "An anonymized case study from my Marketing Intern role at Cloudly Infotech. My team lead gave me a combined product marketing and social media plan spread across products and asked for something the team could actually track.",
+        problem:
+          "A single untidy sheet made it hard to see what was due, who owned it, what its status was, and whether any statistics in the posts had been checked.",
+        data: "An internal combined content plan covering multiple products and the product lifecycle. Only the dashboard structure is shown here, with no unreleased copy.",
+        approach: [
+          "Rebuilt the plan as a five-tab workbook: Dashboard, Content Plan, Social Post Copy, Claims Check, and Notes & Gaps.",
+          "Content Plan became the master table: one row per deliverable (28), with IDs, content type, status and owner dropdowns, a target date column, week separators and color-coded types and statuses.",
+          "Dashboard tiles, a week-by-week grid, status, channel and content-type breakdowns and a stacked chart all calculate from the other tabs, so nothing is typed twice.",
+          "Social Post Copy held 16 posts with headline, body, CTA, hashtags, visual brief, asset link and a LinkedIn character-limit check.",
+          "Claims Check listed 22 statistics and claims for review before publishing, with a column for sources. I hid it and Notes & Gaps before sharing, since they were working tabs rather than deliverables.",
+          "After the engineering team presented new product specs, I recalibrated the plan, rebuilt the dashboard with more detailed charts and aligned the designs to the updated product.",
+        ],
+        insights: [
+          "Formulas recalculated with no errors, and the dashboard totals reconciled to the 28 deliverables in the master table.",
+          'A visible claims list turns "is this statistic safe to publish?" into a tracked task with a named source, instead of a last-minute worry.',
+        ],
+        implication:
+          "The team got a single source of truth for content status, and the plan could be recalibrated quickly when the product specs changed.",
+        limitations:
+          "This is a planning and tracking tool, not a performance result. The claims were queued for review, and this page makes no statement about which were verified. Anonymized, with unpublished copy and hidden working tabs excluded.",
+      },
+    },
     {
       slug: "cost-benefit-dashboard",
       title: "Cost Benefit Analysis Dashboard",
@@ -587,7 +791,7 @@ export const projects = parseContent(
     },
   ],
   "projects",
-);
+).sort((left, right) => projectGroup(left.slug) - projectGroup(right.slug));
 
 export function getProject(slug: string) {
   return projects.find((project) => project.slug === slug);

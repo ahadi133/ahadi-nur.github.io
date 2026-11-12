@@ -6,6 +6,7 @@ import { ButtonLink } from "@/components/ui/Button";
 import { StatChips } from "@/components/ui/StatChip";
 import { TagList } from "@/components/ui/TagPill";
 import { CaseStudyBody } from "@/components/sections/projects/CaseStudyBody";
+import { ProjectEmbed } from "@/components/sections/projects/ProjectEmbed";
 import { ProjectLinks } from "@/components/sections/projects/ProjectLinks";
 import { ProjectTitle } from "@/components/sections/projects/ProjectTitle";
 import { getProject, projects } from "@/content/projects";
@@ -70,6 +71,7 @@ export default async function ProjectPage(props: PageProps<"/projects/[slug]">) 
           sizes="(min-width: 768px) 768px, 100vw"
           className="mt-10 h-auto w-full rounded-2xl border border-card-border"
         />
+        <ProjectEmbed project={project} />
         <div className="mt-12">
           <CaseStudyBody project={project} />
         </div>

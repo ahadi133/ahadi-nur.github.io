@@ -51,6 +51,49 @@ test.describe("home page", () => {
     await expect(trigger).toBeFocused();
   });
 
+  test("projects and analysis work reveal additional items on demand", async ({
+    page,
+  }) => {
+    await page.goto("/");
+
+    const projects = page.locator("#projects");
+    await expect(
+      projects.getByRole("heading", {
+        level: 3,
+        name: "Customer Churn SQL Analysis",
+      }),
+    ).toBeHidden();
+    await projects.getByRole("button", { name: "See more" }).click();
+    await expect(
+      projects.getByRole("heading", {
+        level: 3,
+        name: "Email Campaign Performance Dashboard",
+      }),
+    ).toBeVisible();
+    await projects.getByRole("button", { name: "Show less" }).click();
+    await expect(
+      projects.getByRole("heading", {
+        level: 3,
+        name: "Email Campaign Performance Dashboard",
+      }),
+    ).toBeHidden();
+
+    const analysisWork = page.locator("#analysis-work");
+    await expect(
+      analysisWork.getByRole("heading", {
+        level: 3,
+        name: "Churn Segmentation with SQL",
+      }),
+    ).toBeHidden();
+    await analysisWork.getByRole("button", { name: "See more" }).click();
+    await expect(
+      analysisWork.getByRole("heading", {
+        level: 3,
+        name: "Churn Segmentation with SQL",
+      }),
+    ).toBeVisible();
+  });
+
   test("contact section links to email and LinkedIn", async ({ page }) => {
     await page.goto("/#contact");
     const contact = page.locator("#contact");

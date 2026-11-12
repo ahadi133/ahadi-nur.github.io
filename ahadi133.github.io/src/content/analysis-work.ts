@@ -1,6 +1,23 @@
 import { z } from "zod";
 import { analysisWorkSchema, parseContent } from "@/lib/schema";
 
+const codvedaDomains = new Set([
+  "Data Preparation",
+  "Exploratory Analysis",
+  "Social Media",
+  "Customer Churn",
+  "Statistical Inference",
+  "Predictive Analytics",
+  "Risk Prioritization",
+  "Retention Strategy",
+]);
+
+function analysisWorkGroup(domain: string) {
+  if (codvedaDomains.has(domain)) return 0;
+  if (domain === "Marketing") return 1;
+  return 2;
+}
+
 export const analysisWork = parseContent(
   z.array(analysisWorkSchema),
   [
@@ -109,4 +126,4 @@ export const analysisWork = parseContent(
     },
   ],
   "analysis work",
-);
+).sort((left, right) => analysisWorkGroup(left.domain) - analysisWorkGroup(right.domain));
