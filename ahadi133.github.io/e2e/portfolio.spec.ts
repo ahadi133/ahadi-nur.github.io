@@ -15,6 +15,9 @@ test.describe("home page", () => {
     ]) {
       await expect(page.getByRole("heading", { level: 2, name })).toBeAttached();
     }
+    await expect(page.locator("#about")).toContainText(
+      "African Fashion and Arts Movement",
+    );
   });
 
   test("sections fade in when scrolled into view", async ({ page }) => {
@@ -51,7 +54,7 @@ test.describe("home page", () => {
     await expect(trigger).toBeFocused();
   });
 
-  test("projects and analysis work reveal additional items on demand", async ({
+  test("projects reveal additional items while all analysis work stays visible", async ({
     page,
   }) => {
     await page.goto("/");
@@ -79,19 +82,20 @@ test.describe("home page", () => {
     ).toBeHidden();
 
     const analysisWork = page.locator("#analysis-work");
-    await expect(
-      analysisWork.getByRole("heading", {
-        level: 3,
-        name: "Churn Segmentation with SQL",
-      }),
-    ).toBeHidden();
-    await analysisWork.getByRole("button", { name: "See more" }).click();
+    await expect(analysisWork.getByRole("heading", { level: 3 })).toHaveCount(13);
     await expect(
       analysisWork.getByRole("heading", {
         level: 3,
         name: "Churn Segmentation with SQL",
       }),
     ).toBeVisible();
+    await expect(
+      analysisWork.getByRole("heading", {
+        level: 3,
+        name: "Profitability & Cost Analysis",
+      }),
+    ).toBeVisible();
+    await expect(analysisWork.getByRole("button", { name: "See more" })).toHaveCount(0);
   });
 
   test("contact section links to email and LinkedIn", async ({ page }) => {

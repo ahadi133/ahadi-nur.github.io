@@ -4,7 +4,6 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Section } from "@/components/ui/Section";
 import { TagList } from "@/components/ui/TagPill";
 import type { AnalysisWork as AnalysisWorkItem } from "@/types/content";
-import { SeeMoreList } from "./projects/SeeMoreList";
 
 export function AnalysisWork({ items }: { items: readonly AnalysisWorkItem[] }) {
   return (
@@ -14,15 +13,11 @@ export function AnalysisWork({ items }: { items: readonly AnalysisWorkItem[] }) 
       subtitle="Business problems I've broken down with data"
       band="light"
     >
-      <SeeMoreList
-        as="ul"
-        className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
-        buttonContainerClassName="sm:col-span-2 lg:col-span-3"
-      >
+      <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item, index) => (
           <AnalysisWorkCard key={item.title} item={item} index={index} />
         ))}
-      </SeeMoreList>
+      </ul>
     </Section>
   );
 }

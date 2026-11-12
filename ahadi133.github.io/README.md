@@ -41,8 +41,8 @@ missing field) fails `npm run build` with a message saying what is wrong.
 4. For a local PDF artifact, put the file in `public/assets/` and use
    `/assets/<file>.pdf` as its URL. HTTPS artifact URLs are also supported.
 5. Homepage projects are grouped by provider: CodeVeda, Cloudly, then other
-   work. Projects and Analysis Work each show three items initially; **See
-   more** expands the remaining items.
+   work. Projects show three items initially; **See more** expands the
+   remaining items. Analysis Work displays all entries.
 
 ### Add a certificate
 

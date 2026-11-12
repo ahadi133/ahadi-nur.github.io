@@ -29,6 +29,14 @@ export const experience = parseContent(
       summary:
         "Supported AI development workflows through data annotation and structured data preparation: organised and labelled datasets, maintained quality and consistency, and collaborated on workflow requirements.",
     },
+    {
+      role: "Social Media Manager",
+      company: "African Fashion and Arts Movement",
+      period: "Aug 2021 – Nov 2021",
+      meta: "Contract · Remote",
+      summary:
+        "Managed social content, scheduling and audience engagement to support brand campaigns and online visibility.",
+    },
   ],
   "experience",
 );
